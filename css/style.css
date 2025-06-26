@@ -19,6 +19,11 @@ header{
     justify-content: center;
 }
 
+/* 
+a{
+    text-decoration: none;
+} */
+
 li{
     list-style-type: none;
     text-decoration: none;
@@ -30,7 +35,8 @@ nav{
     /* padding: 10px; */
     position: sticky;
     top: 0;
-    background-color: salmon;
+    background-color: lightgrey;
+    
 }
 .navbar-view{
     list-style-type: none;
@@ -45,9 +51,10 @@ nav{
     display: inline-block;
     position: relative;
     text-decoration: none;
+    /* color: white; */
 }
 .nav-link:hover{
-    background-color: aqua;
+    background-color: rgb(143, 243, 243);
     /* make dropdown */
 }
 .nav-link:hover .dropdown{
@@ -56,8 +63,8 @@ nav{
 .dropdown{
     width: 100%;
     position: absolute;
-    z-index: 999;
-    background-color: rgb(0, 119, 255);
+    /* z-index: 999; */
+    background-color: rgb(182, 214, 252);
     display:none;
 }
 
@@ -72,16 +79,18 @@ nav{
 
 main{
     border: 3px solid blue;
-    /* justify-self: center; */
+    /* height: 30vh; */
+    
     
 }
 .main-layout{
+    
     display: grid;
-    grid-template-columns: 1fr 1fr 250px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
     grid-template-areas: 
-    "news-grid news-grid aside"
-    "category-section category-section aside";
+    "news-grid aside"
+    "category-section aside";
 }
 .newsgrid-container{
     /* border: 3px solid black; */
@@ -103,25 +112,66 @@ article{
     margin: 10px;
     border-radius: 10px;
 }
+
+article img{
+    width: 100%;
+    height:100%;
+    /* object-fit: contain; */
+}
+
 .featured{
     grid-area: featured;
     border: 3px solid blue;
     background-color: lightblue;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .standard{
     grid-area:standard;
     border: 3px solid green;
     background-color: lightgreen;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .horizontal{
     grid-area: horizontal;
     border: 3px solid purple;
     background-color: violet;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .vertical{
     grid-area: vertical;
     border: 3px solid orangered;
+    /* background-image: url("./assets/vertical.jpg"); */
     background-color: lightsalmon;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.article-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.article-img{
+    /* object-position: contain; */
 }
 aside{
     grid-area: aside;
@@ -131,22 +181,37 @@ aside{
 .trending-container{
     
     background-color: lightyellow;
-    padding: 5px;
+    padding: 15px;
+    /* display: flex; */
+}
+.trendstory:hover{
+    background-color: brown;
 }
 .trendstory{
     background-color: rgb(253, 230, 127);
     border-radius: 15px;
-    height: 150px;
-    width: 150px;
-    margin: 10px;
+    height: auto;
+    width: 300px;
+    margin: 20px 10px;
+    /* padding: 10px; */
+    display: flex;
 }
+.trend-img{
+    border-radius: 15px;
+    background-color: antiquewhite;
+    height: 80px;
+    margin: 10px;
+    padding: 5px;
+}
+.trend-text{
+    padding: 10px;
+}
+
 .category-container{
     grid-area: category-section;
     background-color: lightcyan;
     padding: 15px;
     border-radius: 10px;
-    
-    
     
 }
 .category-flex{
@@ -154,18 +219,39 @@ aside{
     display: flex;
     /* align-items: stretch; */
 }
-
 .category{
     
-    background-color: rgb(92, 167, 253);
+    background-color: rgb(165, 205, 252);
     border-radius: 15px;
     display: inline-block;
     border: 3px solid black;
     margin: 15px;
-    padding: 10px;
+    padding: 15px;
     flex-grow: 1;
     
+}
+
+h3{
+    /* background-image: url(); */
+    background-color: rgb(120, 120, 255);
+    padding: 15px;
+    border-radius: 15px;
+}
+.catimg-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cat-img{
+    border-radius: 50%;
+    height: 150px;
+    margin: 15px;
     
+
+}
+
+.cat-ul{
+    padding: 15px;
 }
 
 footer{

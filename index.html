@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <div class="newspaper-title">
-            <h1>Daily Prophet</h1>
+            <h1>The Daily Prophet</h1>
             <img src="./assets/dp_logo.png" id="logo" alt="logo">
         </div>
         <br>
@@ -68,26 +69,104 @@
             <div class="horizontal"></div>
             <div class="vertical"></div> -->
 
-            <article class="featured">
-                <h2>Main Story</h2>
-                <img src="" alt="featured">
-                <p>Author, date. etc.</p>
+            <!-- <article class="featured">
+                <div class="card text-bg-dark">
+                    <img src="./assets/featured2.jpg" class="card-img" alt="Hungarian Horntail in a box">
+                    <div class="card-img-overlay">
+                        <a class="card-title" href="https://www.harrypotter.com/news/hungarian-horntail-takes-over-london-for-studio-tour-summer-stunt" target="_blank">
+                            <h2>Hungarian Horntail in London</h2>
+                        </a>
+                        <p class="card-text">C. Weasley, 05/11/2025.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    
+                    </div>
+                </div>
+                
             </article>
             <article class="standard">
-                <h2>Standard</h2>
-                <img src="" alt="standard">
-                <p>Author, date. etc.</p>
+                <div class="card text-bg-dark">
+                    <img src="./assets/standard.jpg" class="img-fluid" alt="Potion Advancements Lead to Medical Breakthroughs">
+                    <div class="card-img-overlay">
+                        <a class="card-title" href="https://www.harrypotter.com/news/hungarian-horntail-takes-over-london-for-studio-tour-summer-stunt" target="_blank">
+                            <h2>Potion Advancements and Medical Breakthroughs</h2>
+                        </a>
+                        <p class="card-text">Orion Star, 02/19/2025.</p>
+                        <p class="card-text"><small>Last updated 2 hours ago</small></p>
+                    </div>
+                </div>
             </article>
             <article class="horizontal">
-                <h2>Horizontal</h2>
-                <img src="" alt="horizontal">
-                <p>Author, date. etc.</p>
+                <div class="card text-bg-dark">
+                    <img src="./assets/horizontal2.jpg" class="card-img" alt="Hungarian Horntail in a box">
+                    <div class="card-img-overlay">
+                        <a class="card-title" href="https://www.harrypotter.com/news/hungarian-horntail-takes-over-london-for-studio-tour-summer-stunt" target="_blank">
+                            <h2>Qudditch Cup</h2>
+                        </a>
+                        <p class="card-text">Colin Creevey, 06/26/2025.</p>
+                        <p class="card-text"><small>Last updated 14 mins ago</small></p>
+                    </div>
+                </div>
+            </article> -->
+            <!-- <article class="vertical">
+                <div class="card text-bg-dark">
+                    <img src="./assets/vertical.jpg" class="card-img" alt="Hungarian Horntail in a box">
+                    <div class="card-img-overlay">
+                        <a class="card-title" href="https://thedailyprophet.net/bad-news/another-memory-revealed-tom-riddles-desecration-of-the-gray-lady/" target="_blank">
+                            <h2>Another Memory Revealed</h2>
+                        </a>
+                        <p class="card-text">Rita Skeeter, 05/11/2025.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </article> -->
+            
+
+            <article class="featured">
+                <img class="article-img" src="./assets/featured2.jpg" alt="Hungarian Horntail in a box">
+                <div class="article-text">
+                    <a class="card-title" href="https://www.harrypotter.com/news/hungarian-horntail-takes-over-london-for-studio-tour-summer-stunt" target="_blank">
+                        <h2>Hungarian Horntail in London</h2>
+                    </a>
+                    <p class="card-text">C. Weasley, 05/11/2025.</p>
+                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
             </article>
+
+            <article class="standard">
+                <img class="article-img" src="./assets/standard.jpg" alt="Potion Advancements Lead to Medical Breakthroughs">
+                <div class="article-text">
+                    <a class="card-title" href="https://www.harrypotter.com/news/hungarian-horntail-takes-over-london-for-studio-tour-summer-stunt" target="_blank">
+                        <h2>Potion Advancements and Medical Breakthroughs</h2>
+                    </a>
+                    <p class="card-text">Orion Star, 02/19/2025.</p>
+                    <p class="card-text"><small>Last updated 2 hours ago</small></p>
+                </div>
+            </article>
+
+            <article class="horizontal">
+                <img class="article-img" src="./assets/horizontal2.jpg" alt="Team winning the Quidditch Cup">
+                <div class="article-text">
+                    <a class="card-title" href="https://www.harrypotter.com/writing-by-jk-rowling/quidditch-world-cup-final-live-report" target="_blank">
+                        <h2>Qudditch Cup</h2>
+                    </a>
+                    <p class="card-text">Colin Creevey, 06/26/2025.</p>
+                    <p class="card-text"><small>Last updated 14 mins ago</small></p>
+                </div>
+            </article>
+
+
             <article class="vertical">
-                <h2>Vertical</h2>
-                <img src="" alt="vertical">
-                <p>Author, date. etc.</p>
+                <img class="article-img" src="./assets/vertical.jpg" alt="vertical image of a memory pool">
+                <div class="article-text">
+                    <a class="card-title" href="https://thedailyprophet.net/bad-news/another-memory-revealed-tom-riddles-desecration-of-the-gray-lady/" target="_blank">
+                        <h2>Another Memory Revealed</h2>
+                    </a>
+                    <p class="card-text">Rita Skeeter, 05/11/2025.</p>
+                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
             </article>
+
+
             <!-- news grid
             css grid. 
             Articles- featured2x2, standard1x1, horizontal2x1, vertical1x2
@@ -97,40 +176,178 @@
         </div>
         <aside class="trending-container">
             <section>
+                <br>
                 <h2>Trending:</h2>
-                <div class="trendstory"><link rel="stylesheet" href="">link</div>
-                <div class="trendstory"><link rel="stylesheet" href="">link</div>
-                <div class="trendstory"><link rel="stylesheet" href="">link</div>
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/wand.jpg" alt="cat1">
+                    </div>
+                    <div class="trend-text">
+                        <a href="">
+                            <h5>Quick Fix Spells</h5>
+                        </a>
+                        <p>Handy spells you need to know today! Everything from fixing your glasses to repairing ripped jeans.</p>
+                    </div>
+                </div>
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/potion.jpg" alt="cat1">
+                    </div>
+                        <div class="trend-text">
+                        <a href="">
+                            <h5>New Love Potion Side Effects</h5>
+                        </a>
+                        <p>French potionmakers urge caution with popular new release. Several users are coming forward with claims of rose-colored vision lasting several days.</p>
+                    </div>
+                </div>
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/wand.jpg" alt="cat1">
+                    </div>
+                    <div class="trend-text">
+                        <a href="">
+                            <h5>10 Ideas for Your Next Portrait</h5>
+                        </a>
+                        <p>Portraits are known for their sass and ability to move between paintings. Here are fun ideas for your next backdrop!</p>
+                    </div>
+                </div>
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/quill.jpg" alt="cat1">
+                    </div>
+                    <div class="trend-text">
+                        <a href="">
+                            <h5>House Quiz</h5>
+                        </a>
+                        <p>Get your results early!</p>
+                    </div>
+                </div>
+
+                
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/wand.jpg" alt="cat1">
+                    </div>
+                    <div class="trend-text">
+                        <a href="">
+                            <h5>Quick Fix Spells</h5>
+                        </a>
+                        <p>Handy spells you need to know today! Everything from fixing your glasses to repairing ripped jeans.</p>
+                    </div>
+                </div>
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/potion.jpg" alt="cat1">
+                    </div>
+                        <div class="trend-text">
+                        <a href="">
+                            <h5>New Love Potion Side Effects</h5>
+                        </a>
+                        <p>French potionmakers urge caution with popular new release. Several users are coming forward with claims of rose-colored vision lasting several days.</p>
+                    </div>
+                </div>
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/wand.jpg" alt="cat1">
+                    </div>
+                    <div class="trend-text">
+                        <a href="">
+                            <h5>10 Ideas for Your Next Portrait</h5>
+                        </a>
+                        <p>Portraits are known for their sass and ability to move between paintings. Here are fun ideas for your next backdrop!</p>
+                    </div>
+                </div>
+                <div class="trendstory">
+                    <div>
+                        <img class="trend-img" src="./assets/quill.jpg" alt="cat1">
+                    </div>
+                    <div class="trend-text">
+                        <a href="">
+                            <h5>House Quiz</h5>
+                        </a>
+                        <p>Get your results early!</p>
+                    </div>
+                </div>
+
+                
             </section>
         </aside>
         <section class="category-container">
-            <h2>category</h2>
+            <h2>Categories</h2>
             <div class="category-flex">
                 <div class="category">
-                    <link rel="stylesheet" href="">World News
-                    <img src="" alt="cat1">
-                    <ul>
-                        <li>world1</li>
-                        <li>world2</li>
-                        <li>world3</li>
+                    <div class="catimg-container">
+                        <img class="cat-img" src="./assets/quill.jpg" alt="cat1">
+                    </div>
+                    <!-- <link rel="stylesheet" href=""> -->
+                    <h3>World News</h3>
+                    <ul class="cat-ul">
+                        <li>
+                            <a href="">
+                                <h5>Ministry of Magic Investigates Underage Magic</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h5>Break-In Stunt at Gringotts Proved Futile</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h5>House-Elf Rights Bill Approved</h5>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category">
-                    <link rel="stylesheet" href="">Sports
-                    <img src="" alt="cat2">
-                    <ul>
-                        <li>sports1 <link rel="stylesheet" href=""></li>
-                        <li>sports2</li>
-                        <li>sports3</li>
+                    <div class="catimg-container">
+                        <img class="cat-img" src="./assets/broomstick.jpg" alt="cat2">
+                    </div>
+
+                    <link rel="stylesheet" href="">
+                    <h3>Sports</h3>
+                    <ul class="cat-ul">
+                        <li>
+                            <a href="">
+                                <h5>Muggles Playing Quidditch?</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h5>Dragon Racing Protests</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h5>Triwizard Tournament Trivia</h5>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category">
-                    <link rel="stylesheet" href="">Entertainment
-                    <img src="" alt="cat3">
-                    <ul>
-                        <li>entertainment1</li>
-                        <li>entertainment2</li>
-                        <li>entertainment3</li>
+                    <div class="catimg-container">
+                        <img class="cat-img" src="./assets/film.jpg" alt="cat3">
+                    </div>
+
+                    <link rel="stylesheet" href="">
+                    <h3>Entertainment</h3>
+                    
+                    <ul class="cat-ul">
+                        <li>
+                            <a href="">
+                                <h5>HoneyDukes' New Sweet Release</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h5>The Dragon Tamer: An Interview</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h5>Gilderoy Lockhart: Where is he now?</h5>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -175,5 +392,6 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
