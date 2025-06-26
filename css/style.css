@@ -40,12 +40,12 @@ nav{
     
     display: inline-block;
     text-align: center;
+    justify-content: center;
     width: 100%;
-    /* padding: 10px; */
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: lightgrey;
+    /* background-image: linear-gradient(purple, black); */
     
 }
 .navbar-view{
@@ -56,11 +56,12 @@ nav{
 }
 
 .nav-link{
-    border: 2px solid black;
-    padding: 10px;
+    border: 2px solid rgb(191, 195, 236);
+    padding: 20px;
     display: inline-block;
     position: relative;
-    text-decoration: none;
+    
+    justify-content: stretch;
     /* color: white; */
 }
 .nav-link:hover{
@@ -80,6 +81,7 @@ nav{
 
 .dd-link{
     display: block;
+    text-decoration: none;
 }
 .dd-link:hover{
     /* width: 100%; */
@@ -88,7 +90,7 @@ nav{
 
 
 main{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     font-family: Arial, Helvetica, sans-serif;
     /* height: 30vh; */
     
@@ -106,7 +108,7 @@ main{
 .newsgrid-container{
     /* border: 3px solid black; */
     grid-area: news-grid;
-    background-color: rgb(228, 226, 226);
+    background-color: rgb(52, 35, 99);
     
     padding: 5px;
 
@@ -127,13 +129,14 @@ article{
 article img{
     width: 100%;
     height:100%;
+    border-radius: 15px;
     /* object-fit: contain; */
 }
 
 .featured{
     grid-area: featured;
-    border: 3px solid blue;
-    background-color: lightblue;
+    /* border: 3px solid blue;
+    background-color: lightblue; */
 
     position: relative;
     display: flex;
@@ -142,8 +145,8 @@ article img{
 }
 .standard{
     grid-area:standard;
-    border: 3px solid green;
-    background-color: lightgreen;
+    /* border: 3px solid green;
+    background-color: lightgreen; */
 
     position: relative;
     display: flex;
@@ -152,8 +155,8 @@ article img{
 }
 .horizontal{
     grid-area: horizontal;
-    border: 3px solid purple;
-    background-color: violet;
+    /* border: 3px solid purple;
+    background-color: violet; */
 
     position: relative;
     display: flex;
@@ -162,9 +165,8 @@ article img{
 }
 .vertical{
     grid-area: vertical;
-    border: 3px solid orangered;
-    /* background-image: url("./assets/vertical.jpg"); */
-    background-color: lightsalmon;
+    /* border: 3px solid orangered;
+    background-color: lightsalmon; */
 
     position: relative;
     display: flex;
@@ -175,10 +177,16 @@ article img{
 
 .article-text{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* top: 50%; */
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
     color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    min-width: 100%;
+    min-height: 20%;
+    top:60%;
+    
 }
 
 .article-img{
@@ -190,8 +198,7 @@ aside{
     justify-content: center;
 }
 .trending-container{
-    
-    background-color: lightyellow;
+    background-image: linear-gradient(purple, black);
     padding: 15px;
     /* display: flex; */
 }
@@ -199,23 +206,32 @@ aside{
     background-color: brown;
 }
 .trendstory{
-    background-color: rgb(253, 230, 127);
+    background-image: linear-gradient(rgb(255, 2, 255), rgb(73, 2, 121));
     border-radius: 15px;
     height: auto;
-    width: 300px;
+    width: 20vw;
     margin: 20px 10px;
+    border: 2px solid rgb(187, 115, 247);
+    color: white;
     /* padding: 10px; */
     display: flex;
-}
+   
+} 
+.trendstory h5{
+        background-color: rgb(230, 186, 250);
+        padding: 15px;
+        border-radius: 15px;
+    }
 .trend-img{
     border-radius: 15px;
-    background-color: antiquewhite;
+    background-color:  rgb(187, 115, 247);
     height: 80px;
     margin: 10px;
     padding: 5px;
 }
 .trend-text{
     padding: 10px;
+    
 }
 
 .category-container{
@@ -266,8 +282,28 @@ h3{
 }
 
 footer{
-    background-color: lightblue;
+    background-color: black;
     text-align: center;
-    margin: 0;
-    padding: 20px;
+    
+    padding: 30px;
+    color: white;
+/* }
+.footer-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "news-grid aside"
+    "category-section aside";
+}
+.footer-text{
+    
+}
+
+#footer-logo{
+    height: 60px;
+} */
+
+.bottom-link{
+    padding: 15px;
 }
