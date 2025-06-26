@@ -7,7 +7,7 @@ body{
     padding: 0;
 }
 header{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     background-color: black;
     color: white;
     padding: 15px;
@@ -53,19 +53,26 @@ nav{
     text-decoration: none;
     display: flex;
     justify-content: space-evenly;
+    /* background-color: rgb(37, 4, 58); */
+
 }
 
 .nav-link{
     border: 2px solid rgb(191, 195, 236);
-    padding: 20px;
+    /* padding: 20px; */
     display: inline-block;
     position: relative;
-    
     justify-content: stretch;
     /* color: white; */
 }
+.nav-link a{
+    list-style-type: none;
+    text-decoration: none;
+    color: bisque;
+}
 .nav-link:hover{
-    background-color: rgb(143, 243, 243);
+    background-color: rgb(45, 18, 80);
+    border-radius: 15px;
     /* make dropdown */
 }
 .nav-link:hover .dropdown{
@@ -75,7 +82,8 @@ nav{
     width: 100%;
     position: absolute;
     /* z-index: 999; */
-    background-color: rgb(182, 214, 252);
+    background-color: rgb(122, 24, 114);
+    border-radius: 15px;
     display:none;
 }
 
@@ -108,7 +116,7 @@ main{
 .newsgrid-container{
     /* border: 3px solid black; */
     grid-area: news-grid;
-    background-color: rgb(52, 35, 99);
+    background-color: rgb(26, 15, 58);
     
     padding: 5px;
 
@@ -202,9 +210,13 @@ aside{
     padding: 15px;
     /* display: flex; */
 }
-.trendstory:hover{
-    background-color: brown;
+#trend-title{
+    color: rgb(236, 196, 255);
+    padding: 10px;
 }
+/* .trendstory:hover{
+    background-color: brown;
+} */
 .trendstory{
     background-image: linear-gradient(rgb(255, 2, 255), rgb(73, 2, 121));
     border-radius: 15px;
@@ -236,9 +248,8 @@ aside{
 
 .category-container{
     grid-area: category-section;
-    background-color: lightcyan;
+    background-color: rgb(26, 15, 58);;
     padding: 15px;
-    border-radius: 10px;
     
 }
 .category-flex{
@@ -247,20 +258,24 @@ aside{
     /* align-items: stretch; */
 }
 .category{
-    
-    background-color: rgb(165, 205, 252);
+    background-image: linear-gradient(rgb(216, 79, 221), rgb(105, 12, 124));
+    /* background-color: rgb(224, 165, 252); */
     border-radius: 15px;
     display: inline-block;
-    border: 3px solid black;
+    border: 2px solid rgb(187, 113, 247);
     margin: 15px;
     padding: 15px;
     flex-grow: 1;
     
 }
+#cat-title{
+    color: blueviolet;
+    padding: 15px;
+}
 
 h3{
     /* background-image: url(); */
-    background-color: rgb(120, 120, 255);
+    
     padding: 15px;
     border-radius: 15px;
 }
@@ -273,12 +288,22 @@ h3{
     border-radius: 50%;
     height: 150px;
     margin: 15px;
+    padding: 10px;
+    background-color: blueviolet;
     
 
 }
 
 .cat-ul{
     padding: 15px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 15px;
+    
+}
+
+.cat-ul li a{
+    
+    color: rgb(48, 9, 90);
 }
 
 footer{
